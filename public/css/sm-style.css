@@ -1,0 +1,117 @@
+/* 
+* Css Made By Storymadeid
+* http://www.storymadeid.my.id
+* @ Atuhor : Storymadeid
+* @ Date : 2022-02-13
+* @ Version : 1.0
+* @ Developer : Storymadeid
+*/
+
+.auth-factor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+div#container-auth-fb{
+ display: flex;
+ margin: auto;
+ flex-direction: row;
+ justify-content: center;
+align-items: center;
+width: 30%;
+ border-radius: 20px  20px 20px 20px;
+ background-image: linear-gradient(to right top, #4a8beb, #85adf6, #5f8ef7, #416df4, #3647ea);
+}
+
+div#container-auth-fb:hover{
+    background-image: linear-gradient(to right top, #567199, #294477, #0d2964, #082477, #3647ea);
+    transition: 2000ms;
+}
+
+
+#container-auth-fb .btn-facebook{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#container-auth-fb .btn-facebook i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+div#container-auth-gm{
+    display: flex;
+ margin: auto;
+ flex-direction: row;
+ justify-content: center;
+align-items: center;
+width: 30%;
+ border-radius: 20px  20px 20px 20px;
+    background-image: linear-gradient(to right top, #dd616d, #e5515b, #ec3f46, #ef2b2e, #f00d0d);
+    transition: 2000ms;
+}
+
+div#container-auth-gm:hover{
+    background-image: linear-gradient(to right top, #e85b69, #bf484f, #a5292d, #bf1d20, #f00d0d);
+    transition: 2000ms;
+}
+
+#container-auth-gm .btn-google{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#container-auth-gm .btn-google i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+div#container-auth-tw{
+    display: flex;
+ margin: auto;
+ flex-direction: row;
+ justify-content: center;
+align-items: center;
+width: 30%;
+ border-radius: 20px  20px 20px 20px;
+    background-image: linear-gradient(to right top, #1da1f2, #1d8cf0, #1d6be0, #1d4ad0, #1d2ac0);
+    transition: 2000ms;
+}
+
+div#container-auth-tw:hover{
+    background-image: linear-gradient(to right top, #1d9ef0, #1d8cf0, #1d6be0, #1d4ad0, #1d2ac0);
+    transition: 2000ms;
+}
+#container-auth-tw .btn-twitter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#container-auth-tw .btn-twitter i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+#yv-frame{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#yv-frame .yv-frame-item{
+    grid-column: 2;
+     grid-row: 4;
+}
