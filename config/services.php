@@ -38,17 +38,17 @@ return [
     'facebook'=>[
         'client_id' => env('FACEBOOK_CLIENT_ID'),
         'client_secret' => env('FACEBOOK_SECRET'),
-        'redirect' => 'http://silsilah.test/auth/facebook/callback',
+        'redirect' => 'https://silsilah.storymadeid.my.id/facebook/callback',
     ],
     'google' => [
         'client_id' => env('GOOGLE_CLIENT_ID'),
         'client_secret' => env('GOOGLE_SECRET'),
-        'redirect' => 'http://silsilah.test/auth/google/callback',
+        'redirect' => 'http://silsilah.test/google/callback',
     ],
     'twitter' => [
         'client_id' => env('TWITTER_CLIENT_ID'),
         'client_secret' => env('TWITTER_SECRET'),
-        'redirect' => 'http://silsilah.test/auth/callback/twitter',
+        'redirect' => 'http://silsilah.test/twitter/callback',
     ],
 
 ];

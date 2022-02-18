@@ -19,6 +19,9 @@
 </div>
 {{ Form::close() }}
 
+
+
+
 @if (request('q'))
 <br>
 {{ $users->appends(Request::except('page'))->render() }}
@@ -49,6 +52,15 @@
     @endforeach
 </div>
 @endforeach
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v13.0&appId=504586234394443&autoLogAppEvents=1" nonce="rjDROXxk"></script>
+<div>
+<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
+</div>
+
+
+
 
 {{ $users->appends(Request::except('page'))->render() }}
 @endif

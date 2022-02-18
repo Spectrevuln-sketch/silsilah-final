@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('css/sm-style.css') }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://kit.fontawesome.com/a52987c1d7.js" crossorigin="anonymous"></script>
+    
     @yield('ext_css')
     <style>
     .page-header {

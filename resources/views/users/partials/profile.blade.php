@@ -2,7 +2,7 @@
     <div class="panel-heading"><h3 class="panel-title">{{ trans('user.profile') }}</h3></div>
     <div class="panel-body text-center">
         @if($user->photo_path)
-        <img src="{{ asset('/') . $user->photo_path }}" class="img-thumbnail" style="width: 100%; max-width: 300px;">
+         <img src="{{ asset('/img') ."/uploads/". $user->photo_path }}" class="img-thumbnail" style="width: 100%; max-width: 300px;">
         @else
         @if($user->gender_id == 1)
         <img src="{{ asset('/images/icon_user_1.png') }}" class="img-thumbnail" style="width: 100%; max-width: 300px;">

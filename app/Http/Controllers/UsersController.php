@@ -216,9 +216,11 @@ class UsersController extends Controller
         if (Storage::exists($user->photo_path)) {
             Storage::delete($user->photo_path);
         }
-        $user->photo_path = $request->file('photo')->store('images');
-
+        // $user->photo_path = $request->file('photo')->store('img');
+        
         $fileName=$request->file('photo')->hashName();
+
+        $user->photo_path = $request->file('photo')->storeAs('/', $fileName, 'uploads' );
         $user->update([
             'photo_path' => $user->photo_path,
         ]);
@@ -326,6 +328,11 @@ class UsersController extends Controller
         $embed->save();
         
         return redirect()->route('users.show', $user->id)->with('success','Berhasil Embed Video Baru')->with('Embed Video',$embed);
+    }
+
+
+    public function privacy(){
+        return view('users.privacy');
     }
     
 

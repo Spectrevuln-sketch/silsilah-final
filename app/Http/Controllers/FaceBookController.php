@@ -16,12 +16,13 @@ class FaceBookController extends Controller
         return Socialite::driver('facebook')->redirect();
     }
 
+    // callback  facebook oauth
+
+
     // callback from facebook
     public function callback()
     {
         $user = Socialite::driver('facebook')->user();
-
-    dd($user);
 
         $existingUser = User::where('email', $user->email)->first();
 
@@ -32,8 +33,7 @@ class FaceBookController extends Controller
                 'name' => $user->name,
                 'provider' => 'facebook',
                 'email' => $user->email,
-            ]; 
-
+            ];
 
             $newUser = User::create([
                 'name' => $user->name,
@@ -45,9 +45,16 @@ class FaceBookController extends Controller
                 'photo_path' => $user->avatar,
             ]);
 
+            $newUser->save();
             auth()->login($newUser);
         }
 
         return redirect()->to('home');
+    }
+
+    public function delete_user(User $user)
+    {
+        $user->delete();
+        return redirect()->route('home');
     }
 }

@@ -61,6 +61,12 @@ Route::prefix('twitter')->name('twitter.')->group( function(){
 });
 
 
+/** Privacy Policys */
+Route::get('privacy-policys', 'UsersController@privacy')->name('user.privacy');
+
+/** Delete User */
+Route::post('user_delete/{user}', 'FaceBookController@delete_user')->name('user.delete_user');
+
 
 Route::get('profile-search', 'UsersController@search')->name('users.search');
 Route::get('users/{user}', 'UsersController@show')->name('users.show');
